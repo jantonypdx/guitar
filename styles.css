@@ -1,0 +1,124 @@
+/* color names from https://www.color-name.com/hex */
+
+:root {
+  --shocking-white: #fbfbfa;
+  --steam: #e8ecef;
+  --lyric-blue: #6e828d;
+  --sport-black: #141414;
+  --sea-white: #e8edf7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-battleship-gray {
+  background-color: var(--lyric-blue);
+}
+
+.bg-sport-black {
+  background-color: var(--sport-black);
+}
+
+.bg-granny-smith-white {
+  background-color: var(--steam);
+}
+
+.bg-charred {
+  background-color: #474747;
+}
+
+/* Internal page header - shorter version of hero */
+.page-header-container {
+  position: relative;
+  min-height: 360px;
+  overflow: hidden;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.page-header-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 2rem 0; /* less padding than hero */
+  padding-left: 1.1rem; /* add left padding to shift content right */
+  /* or optionally use margin-left */
+  /* margin-left: 2rem; */
+}
+
+.page-header-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* title styling for page headers */
+.page-header-container h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 3.5rem; /* Smaller than hero */
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.page-header-container p {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  max-width: 60ch;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* mobile responsive for page headers */
+@media (max-width: 768px) {
+  .page-header-container {
+    min-height: 300px; /* slightly smaller container on tablets */
+  }
+
+  .page-header-content {
+    padding-left: 1rem; /* less right shift on mobile for more space */
+  }
+
+  .page-header-container h1 {
+    font-size: 2.5rem; /* increased from 2rem - adjust this for title size */
+    line-height: 1.15; /* tighter line height for mobile */
+  }
+
+  .page-header-container p {
+    font-size: 1.125rem; /* increased from 0.9375rem - adjust this for subtitle size */
+    line-height: 1.4; /* better readability on mobile */
+    max-width: none; /* allow full width on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header-container {
+    min-height: 250px; /* even smaller container on phones */
+  }
+
+  .page-header-content {
+    padding-left: 0.5rem; /* minimal right shift on small screens */
+  }
+
+  .page-header-container h1 {
+    font-size: 3rem; /* increased from 1.75rem - main title on small phones */
+  }
+
+  .page-header-container p {
+    font-size: 1.25rem; /* increased subtitle size for small phones */
+    line-height: 1.5; /* comfortable reading on small screens */
+  }
+}
