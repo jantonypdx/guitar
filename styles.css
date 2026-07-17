@@ -6,10 +6,23 @@
   --lyric-blue: #6e828d;
   --sport-black: #141414;
   --sea-white: #e8edf7;
+  --dark-imperial-blue: #163e7a;
+  --camouflage-blue: #264e8a;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: var(--camouflage-blue) !important;
+  color: var(--shocking-white);
+}
+
+.navbar .nav-link,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--shocking-white) !important;
 }
 
 .bg-battleship-gray {
