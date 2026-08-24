@@ -1,7 +1,7 @@
 /* color names from https://www.color-name.com/hex */
 
 :root {
-  --shocking-white: #fbfbfa;
+  --shocking-white: #fbfbfb;
   --steam: #e8ecef;
   --lyric-blue: #6e828d;
   --sport-black: #141414;
@@ -47,6 +47,21 @@ html {
 
 .bg-charred {
   background-color: #474747;
+}
+
+.songListItems {
+  text-align: left;
+}
+
+.songListItems li {
+  list-style: none;
+  font-size: 14px;
+  display: inline-block;
+}
+
+ul li {
+  display: block;
+  text-align: left;
 }
 
 /* Internal page header - shorter version of hero */
